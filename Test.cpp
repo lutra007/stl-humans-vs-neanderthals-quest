@@ -30,5 +30,9 @@ int main() {
         grade = 0;
     }
     cout << "Your grade is: "  << grade << endl;
+    
+    if (grade == 100)
+        secret_message();
+    
     return 0;
 }

@@ -41,3 +41,15 @@ string cipher(string text) {
     }
     return add.str();
 };
+
+void secret_message() {
+    cout << endl;
+    cout << "Well done!" << endl;
+    cout << "AF011222.1 is DNA from the 40,000-year-old fossil of the species Homo neanderthalensis in a German cave found in August 1856 " << endl;
+    cout << "AY149291.1 is from the same cave in Germany" << endl;
+    cout << "AF282971.1 is DNA of a Neanderthal found in Vindija Cave in Croatia" << endl;
+    cout << "DQ859014.2 is a 40,000-year-old sample from Spain" << endl;
+    cout << "Samples of modern human were added randomly" << endl;
+    cout << endl;
+    cout << "Submit the keys to https://www.ncbi.nlm.nih.gov/nuccore/ to learn more about the samples!" << endl;
+};

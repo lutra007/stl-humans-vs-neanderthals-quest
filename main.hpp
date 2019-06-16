@@ -16,4 +16,3 @@ string find_substring(string reference, string dna);
 //Complete your quest!
 
 string quest();
-

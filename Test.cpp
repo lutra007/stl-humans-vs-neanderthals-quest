@@ -17,11 +17,15 @@ int main() {
         
         testcase.setname("test range");
         
-        string ans = answer();
-        string check = quest();
-        string your_ans = cipher(check);
-        
-        testcase.CHECK_EQUAL(your_ans, ans);
+        string your_answer = quest();
+        your_answer = cipher(your_answer);
+        map <string, string> genbank = getSequences();
+        map <string, string>::iterator it;        
+        for (it = genbank.begin(); it != genbank.end(); ++it) {
+            bool compare1 = answer(it->first);
+            bool compare2 = answer(it->first, your_answer);
+            testcase.CHECK_EQUAL(compare2, !compare1);  
+        }
         
         grade = testcase.grade();
         
